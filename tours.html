@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбрать тур - Туристическое агентство "Малибу"</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/ИКОНКА.png" alt="Логотип Малибу">
+                <h1>Туристическое агентство "Малибу"</h1>
+             </div>
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> +7 (495) 123-45-67</p>
+            <p><i class="far fa-envelope"></i> info@malibu.ru</p>
+        </div>
+    </div>
+</header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="tours.html"><i class="fas fa-map-marked-alt"></i> Выбрать тур</a></li>
+                <li><a href="hot_tours.html"><i class="fas fa-fire-alt"></i> Горящие туры</a></li>
+                <li><a href="news.html"><i class="far fa-newspaper"></i> Новости</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Наши услуги</a></li>
+                <li><a href="reviews.html"><i class="far fa-comment-alt"></i> Отзывы</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Наша команда</a></li>
+                <li><a href="contacts.html"><i class="fas fa-address-book"></i> Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="tour-search-form">
+        <div class="container">
+            <h2>Поиск туров</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="destination">Направление:</label>
+                    <input type="text" id="destination" name="destination" placeholder="Страна, город, регион">
+                </div>
+
+                <div class="form-group">
+                    <label for="date-from">Дата вылета (от):</label>
+                    <input type="date" id="date-from" name="date-from">
+                </div>
+
+                <div class="form-group">
+                    <label for="date-to">Дата вылета (до):</label>
+                    <input type="date" id="date-to" name="date-to">
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Длительность (ночей):</label>
+                    <select id="duration" name="duration">
+                        <option value="">Любая</option>
+                        <option value="7">7 ночей</option>
+                        <option value="10">10 ночей</option>
+                        <option value="14">14 ночей</option>
+                        <option value="21">21 ночь</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="adults">Взрослые:</label>
+                    <input type="number" id="adults" name="adults" min="1" max="10" value="2">
+                </div>
+
+                <div class="form-group">
+                    <label for="children">Дети:</label>
+                    <input type="number" id="children" name="children" min="0" max="10" value="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="price-min">Цена (от):</label>
+                    <input type="number" id="price-min" name="price-min" placeholder="Минимальная цена">
+                </div>
+
+                <div class="form-group">
+                    <label for="price-max">Цена (до):</label>
+                    <input type="number" id="price-max" name="price-max" placeholder="Максимальная цена">
+                </div>
+
+                <div class="form-group">
+                    <label for="tour-type">Тип отдыха:</label>
+                    <select id="tour-type" name="tour-type">
+                        <option value="">Любой</option>
+                        <option value="beach">Пляжный отдых</option>
+                        <option value="excursion">Экскурсионный тур</option>
+                        <option value="ski">Горнолыжный курорт</option>
+                        <option value="cruise">Круиз</option>
+                        <option value="wellness">Оздоровительный отдых</option>
+                    </select>
+                </div>
+
+                <button type="submit">Найти <i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section id="tour-list">
+        <div class="container">
+            <h2>Доступные туры</h2>
+
+            <div class="tour-item" data-destination="Италия" data-duration="7" data-price="55000" data-type="excursion">
+                <img src="img/Италия.png" alt="Тур в Италию">
+                <h3>Экскурсионный тур по Италии</h3>
+                <p>Рим, Флоренция, Венеция - 7 дней</p>
+                <p class="price">Цена: от 55 000 руб.</p>
+                <a href="#" class="button">Подробнее</a>
+            </div>
+
+            <div class="tour-item" data-destination="Бали" data-duration="10" data-price="80000" data-type="beach">
+                <img src="img/Бали.png" alt="Тур на Бали">
+                <h3>Пляжный отдых на Бали</h3>
+                <p>10 дней релакса на лучших пляжах Индонезии</p>
+                <p class="price">Цена: от 80 000 руб.</p>
+                <a href="#" class="button">Подробнее</a>
+            </div>
+
+            <div class="tour-item" data-destination="Австрия" data-duration="7" data-price="65000" data-type="ski">
+                <img src="img/Австрия.png" alt="Тур в Австрию">
+                <h3>Горнолыжный отдых в Австрии</h3>
+                <p>Лучшие трассы и незабываемые впечатления!</p>
+                <p class="price">Цена: от 65 000 руб.</p>
+                <a href="#" class="button">Подробнее</a>
+            </div>
+
+            <div class="tour-item" data-destination="Греция" data-duration="14" data-price="70000" data-type="beach">
+                <img src="img/Греция.png" alt="Тур в Грецию">
+                <h3>Пляжный отдых в Греции</h3>
+                <p>Остров Крит, 14 дней незабываемого отдыха!</p>
+                <p class="price">Цена: от 70 000 руб.</p>
+                <a href="#" class="button">Подробнее</a>
+            </div>
+
+            <div class="tour-item" data-destination="Япония" data-duration="10" data-price="90000" data-type="excursion">
+                <img src="img/Япония.png" alt="Тур в Японию">
+                <h3>Экскурсионный тур по Японии</h3>
+                <p>Токио, Киото, Осака - 10 дней</p>
+                <p class="price">Цена: от 90 000 руб.</p>
+                <a href="#" class="button">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Туристическое агентство "Малибу"</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/tours.js"></script>
+     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туристическое агентство "Малибу" - Откройте мир с нами!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/ИКОНКА.png" alt="Логотип Малибу">
+                <h1>Туристическое агентство "Малибу"</h1>
+             </div>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt"></i> +7 (495) 123-45-67</p>
+                <p><i class="far fa-envelope"></i> info@malibu.ru</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="tours.html"><i class="fas fa-map-marked-alt"></i> Выбрать тур</a></li>
+                <li><a href="hot_tours.html"><i class="fas fa-fire-alt"></i> Горящие туры</a></li>
+                <li><a href="news.html"><i class="far fa-newspaper"></i> Новости</a></li>
+                <li><a href="services.html"><i class="fas fa-concierge-bell"></i> Наши услуги</a></li>
+                <li><a href="reviews.html"><i class="far fa-comment-alt"></i> Отзывы</a></li>
+                <li><a href="team.html"><i class="fas fa-users"></i> Наша команда</a></li>
+                <li><a href="contacts.html"><i class="fas fa-address-book"></i> Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="search-form">
+        <div class="container">
+            <h2>Найдите свой идеальный отдых</h2>
+            <form>
+                <div class="form-group">
+                    <label for="from">Откуда:</label>
+                    <input type="text" id="from" name="from" placeholder="Город вылета">
+                </div>
+
+                <div class="form-group">
+                    <label for="to">Куда:</label>
+                    <input type="text" id="to" name="to" placeholder="Страна/город назначения">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Дата вылета:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="nights">Количество ночей:</label>
+                    <input type="number" id="nights" name="nights" min="1" max="30" value="7">
+                </div>
+
+                <div class="form-group">
+                    <label for="adults">Количество взрослых:</label>
+                    <input type="number" id="adults" name="adults" min="1" max="10" value="2">
+                </div>
+
+                <button type="submit">Найти <i class="fas fa-search"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <section id="hot-tours">
+        <div class="container">
+            <h2>Горящие туры</h2>
+            <div class="tour-grid">
+                <div class="tour-item">
+                    <img src="img/Турция.png" alt="Тур в Турцию">
+                    <h3>Турция, Анталия</h3>
+                    <p>7 дней / 6 ночей</p>
+                    <p class="price">от 30 000 руб.</p>
+                </div>
+                <div class="tour-item">
+                    <img src="img/Египет.png" alt="Тур в Египет"> 
+                    <h3>Египет, Шарм-эль-Шейх</h3>
+                    <p>10 дней / 9 ночей</p>
+                    <p class="price">от 45 000 руб.</p>
+                </div>
+                <div class="tour-item">
+                    <img src="img/Тайланд.png" alt="Тур в Тайланд"> 
+                    <h3>Тур в Тайланд</h3>
+                    <p>10 дней / 9 ночей</p>
+                    <p class="price">от 45 000 руб.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team">
+        <div class="container">
+            <h2>Наша команда</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="img/Иван.png" alt="Иван Иванов">
+                    <h3>Иван Иванов</h3>
+                    <p>Менеджер по продажам</p>
+                    <p><i class="far fa-envelope"></i> ivan.ivanov@malibu.ru</p>
+                </div>
+                <div class="team-member">
+                    <img src="img/Мария.png" alt="Мария Петрова"> 
+                    <h3>Мария Петрова</h3>
+                    <p>Эксперт по направлению</p>
+                    <p><i class="far fa-envelope"></i> maria.petrova@malibu.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <h2>Новости</h2>
+            <div class="news-grid">
+                <div class="news-item">
+                    <img src="img/скидка 30.png" alt="Новая акция"> 
+                    <h3><a href="news.html">Скидки на летние туры!</a></h3>
+                    <p><i class="far fa-calendar-alt"></i> Опубликовано: 15.05.2025</p>
+                </div>
+                <div class="news-item">
+                    <img src="img/мальдив.png" alt="Открытие нового направления"> 
+                    <h3><a href="news.html">Открытие нового направления - Мальдивы!</a></h3>
+                    <p><i class="far fa-calendar-alt"></i> Опубликовано: 10.05.2025</p>
+                </div>
+                <div class="news-item">
+                    <img src="img/виза.png" alt="Изменения в визовом режиме"> 
+                    <h3><a href="news.html">Важная информация об изменениях в визовом режиме</a></h3>
+                    <p><i class="far fa-calendar-alt"></i> Опубликовано: 05.05.2025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Туристическое агентство "Малибу"</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+</html>

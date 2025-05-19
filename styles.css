@@ -1,0 +1,472 @@
+/* Общий стиль */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* Шапка сайта */
+header {
+    background: #fff;
+    color: #333;
+    padding: 20px 0;
+    border-bottom: 3px solid #5bc0de;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 70px;
+    margin-right: 15px;
+}
+
+header .logo h1 {
+    font-size: 2.2em;
+    margin: 0;
+    color: #2e6da4;
+}
+
+header .contact-info {
+    text-align: right;
+}
+
+header .contact-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+header .contact-info i {
+    margin-right: 5px;
+    color: #5bc0de;
+}
+
+/* Навигация */
+nav {
+    background: #5bc0de;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+/* Поиск тура */
+#search-form {
+    padding: 40px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#search-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2e6da4;
+    font-size: 2em;
+}
+
+#search-form form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#search-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #495057;
+}
+
+#search-form input[type="text"],
+#search-form input[type="date"],
+#search-form input[type="number"],
+#search-form select {
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #495057;
+}
+
+#search-form button {
+    background-color: #77b5fe;  
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / -1;
+    margin-top: 20px;
+}
+
+#search-form button:hover {
+    background-color: #66a5ee; 
+}
+
+#search-form button i {
+    margin-left: 5px;
+}
+
+/* Горящие туры */
+#hot-tours {
+    padding: 50px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#hot-tours h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2e6da4;
+    font-size: 2em;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.tour-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.tour-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tour-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tour-item h3 {
+    margin: 15px;
+    font-size: 1.3em;
+    color: #333;
+    text-align: center;
+}
+
+.tour-item p {
+    margin: 0 15px 15px 15px;
+    color: #555;
+}
+
+.tour-item .price {
+    font-weight: bold;
+    color: #2e6da4;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Команда */
+#team {
+    padding: 50px 0;
+    background: #f0f8ff;
+}
+
+#team h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2e6da4;
+    font-size: 2em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member .position {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.team-member i {
+    margin-right: 5px;
+    color: #5bc0de;
+}
+
+/* Новости */
+#news {
+    padding: 50px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#news h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2e6da4;
+    font-size: 2em;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.news-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.news-item h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.news-item a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.news-item p {
+    color: #555;
+}
+
+.news-item i {
+    margin-right: 5px;
+    color: #5bc0de;
+}
+
+/* Нижняя часть сайта */
+footer {
+    background: #2e6da4;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #f0ad4e;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header .container,
+    nav .container,
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    header .contact-info {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    #search-form form {
+        grid-template-columns: 1fr;
+    }
+
+    footer .social-links {
+        margin-top: 10px;
+    }
+
+    .team-grid, .tour-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Отзывы */
+#reviews-page .review-item {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#reviews-page .review-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+#reviews-page .review-item .review-content h3 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+#reviews-page .review-item .review-content p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#reviews-page .review-item .review-content .date {
+    font-style: italic;
+    color: #777;
+}
